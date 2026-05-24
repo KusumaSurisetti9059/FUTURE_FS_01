@@ -1,0 +1,281 @@
+body{
+    margin:0;
+    background:black;
+    scrolling:"no";
+    color:white;
+}
+
+.back{
+    width:100%;
+    height: 100vh; /*vh=viewport height height of screen*/
+    
+    background-color:#080822;
+    background-image: radial-gradient(circle at left center,#167ccf,transparent 35%),/* position,color1,color2*/
+                      radial-gradient(circle at right center,#e100ff,transparent 20%);
+                     
+    background-size: 100% 100%,
+                     100% 100%,
+                     50px 50px,
+                     50px 50px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    font-family:serif;
+}
+.name{
+    color:white;
+    padding:0px 20px;
+    font-size:20px;
+}
+nav{
+    padding:20px 60px;
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:right;
+}
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;  
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:19px;
+}
+.d{
+   
+    padding:0px ;
+    gap:0px;
+    align-items:center;
+}
+.b-style{
+    display:flex;
+    height:80vh;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:80px;
+    text-align:left;
+}
+.content h1{
+    color:white;
+    
+    font-size:40px;
+}
+.content h3{
+    color:white;
+    
+    margin-top:15px;
+    font-size:25px;
+}
+.content p{
+    color:white;
+    width:600px;
+    margin-top:20px;
+    line-height: 30px;
+}
+.btn{
+    padding: 0.5em 1em;
+    background-color:black;
+    border:none;
+    color: #f0f0ff;
+    border-radius:1000px;
+    
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.btn::after{
+    content:'';
+    position:absolute;
+    height:110%;
+    width:107%;
+    border-radius:1000px;
+    background-image: linear-gradient(to bottom right,#008cff,#e100ff);
+    z-index:-1;
+
+}
+.btn:hover{
+    z-index:0;
+    box-shadow: 5px 0px 10px #024379,-5px 0 10px #853b8f;
+}
+.skills{
+    min-height: 100vh;
+    padding-top:120px;
+    font-family:'Times New Roman';
+    text-align:center;
+    color:white;
+    height:800px;
+}
+.skills-container{
+
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    width:900px;
+    
+    margin:auto;
+}
+.skill-card{
+    width:180px;
+    height:100px;
+    background:#111;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+.about{
+    color:white;
+    padding: 100px 20px;
+    text-align:center;
+    height:700px;
+}
+.about h1{
+    font-size:50px;
+    margin-bottom: 30px;
+}
+.about p{
+    width:70%;
+    margin:auto;
+    font-size:20px;
+    line-height:35px;
+}
+.project{
+    min-height:100vh;
+    padding:100px 50px;
+    align-items:center;
+    color:white;
+}
+.project-container{
+    
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    width:900px;
+    
+    margin:auto;
+}
+.cont{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    margin:auto;
+    width:900px;
+}
+.pro{
+    width:300px;
+    padding:30px 40px;
+    background:"#111";
+    justify-content:center;
+    align-items:center;
+    border: 2px solid #00bfff;
+    border-radius:20px;
+    transition:0.3s;
+}
+.pro:hover{
+    background:translateY(-10px);
+    background:#000000;
+    
+}
+.Contact{
+    min-height:100vh;
+    padding:100px 50px;
+    justify-content: center;
+    align-items:center;
+    color:white;
+}
+form{
+    width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+input,textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#111;
+    color:white;
+    font-size:15px;
+    outline:none;
+    border: 2px solid #008cff;
+}
+textarea{
+    height:150px;
+    resize:none;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    border-radius :10px;
+    background:#00bfff;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+form button:hover{
+    background:rgb(117, 4, 108);
+    color:black;
+
+}
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        padding:20px;
+    }
+    nav ul{
+        gap:15px;
+        margin-top:20px;
+    }
+    .b-style{
+        flex-direction: column;
+        text-align: center;
+        gap:30px;
+        padding:30px 20px;
+    }
+    img{
+        width:220px;
+        height:220px;
+    }
+    right{
+        width:100%;
+
+    }
+    right h1{
+        font-size:38px;
+    }
+    right p{
+        font-size:16px;
+    }
+    .skills-container{
+        grid-template-columns:repeat(2,150px);
+    }
+    .projects-container{
+        flex-direction:column;
+        align-items: center;
+    }
+    form{
+        width:90%;
+    }
+    a{
+        width:220px;
+    }
+
+}

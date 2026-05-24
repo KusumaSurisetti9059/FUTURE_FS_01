@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head> <link rel="stylesheet" href="Task1.css"></head>
+    <body class="back" > 
+        
+        <nav>
+       <h2 class="name"> Kusuma Surisetti</h2> 
+        
+            <ul> 
+                <li class="btn"><a href="#home">Home</a></li>
+                <li class="btn"><a href="#about"> About</a></li>
+                <li class="btn"><a href="#skills">Skills</a></li>
+              
+                <li class="btn"><a href="#Projects">Projects</a></li>
+               <li class="btn"><a href="#contact">Contact </a></li>
+
+            </ul>
+        </nav>
+        <section id="home">
+        <div class="b-style" > 
+            <div class="d" style="border-radius:40%;height:300px;width:300px;overflow:hidden;box-shadow: 3px 2px 5px 2px" > <img src="Me.jpg" scrolling="no" class="right"style="object-fit:cover;background-color:white;width:100%;height:100%;border:100px;border-color:white"/>
+            </div>
+            <div>
+                <h1> Hello,I'm Kusuma Surisetti</h1><br>
+                <h3> AIML Student</h3>
+                <p>Want to know about me.Start exploring my portfolio by Clicking the options</p>
+                <a href="Resume.pdf" download style="text-decoration: none;"> <button style="margin-top:30px" class="btn"><p>Download Resume</p></button></a>
+            </div>
+        </div>
+        </section>
+        <br><br>
+        <section id="about" class="about">
+            <h1> About Me</h1>
+            <p style="font-style:oblique"> I'm Kusuma Surisetti.<br>I have completed my Secondary Education from R.R.Bh.R. Government High School in Pithapuram.<br>I have completed my Pre-university Course in MPC from IIIT Nuzvid.<br>Curently I'm pursuing BTech 2nd year in Artificial Intelligence and Machine Learning Branch in IIIT Nuzvid <br>
+                I love exploring new Technologies and learning new Skills.
+                I'm passionate about web development and technology.
+                I enjoy building clean and creative websites using HTML,CSS and JavaScript while continuously improving my coding skills.
+                I'm always excited to explore new opputunities in tech.<br><br></p>
+        </section>
+        <section id="skills" class="skills">
+            <h1>My Skills</h1><br><br><br><br>
+            <div class="skills-container">
+                <div class="skill-card" style="font-weight: bold"> <img src="HTML5_Logo_512.png" style="border-radius:40px;height:50px;width:50px"/>HTML</div>
+                <div class="skill-card" style="font-weight: bold"> <img src="CSS-Logo-2011.png" style="border-radius:40px;height:50px;width:50px"/> &nbsp;&nbsp;CSS</div>
+                <div class="skill-card" style="font-weight: bold"> <img src="java-logo-png_seeklogo-158094.png" style="border-radius:40px;height:80px;width:80px"/> Java</div>
+                <div class="skill-card" style="font-weight: bold"> <img src="Screenshot_2026_0521_153352.jpg" style="border-radius:20px;height:50px;width:50px"/> &nbsp; JavaScript</div>
+                <div class="skill-card" style="font-weight: bold"> <img src="960px-Python-logo-notext.svg.png" style="border-radius:20px;height:50px;width:50px"/>&nbsp;Python</div>
+                <div class="skill-card" style="font-weight: bold"> <img src="Screenshot_2026_0521_152950.jpg" style="border-radius:60px;height:50px;width:50px"/>C language</div>
+                <div class="skill-card" style="font-weight: bold">Data Structures</div>
+
+            </div>
+        </section>
+        <section id="Projects" class="project" >
+            <h1 align="center"> Projects</h1><br><br><br>
+            <div class="project-container">
+                <div class="pro"> <h2>Simple-Calculator</h2> <br> <p>A simple calculator designed using HTML,CSS and JavaScript</p>
+                <br><p>GitHub Link:<a href="cw"> jcnjds</a></p></div>
+                <div class="pro"><h2>Portfolio Website</h2><br><p>A portfolio website designed using HTML,CSS and JavaScript.<br>
+                <p font-size="9px">Present you are watching.</p>
+                <br>GitHub Link:<a href="bchec">dndo</a></div>
+            </div>
+        
+        </section>
+        
+        <section id="contact" class="Contact" >
+            
+            <h1 align="center" > Contact </h1><br><br>
+            <div class="b-style">
+            <div  class="cont">
+                
+            <form id="contac">
+                <h2 align="center">Let's Build Something</h2>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea placeholder="Enter Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            </div>
+            <div >
+            <form id="contac">
+            <h2 align="center"> Social Links</h2>
+            <label>G-Mail:</label>
+            <input type="text" name="G-Mail" value="kusumasurisetti1@gmail.com" readonly >
+            <label>Linkedin Profile:</label>
+            <input type="text" name="Linkedin " value="https://www.linkedin.com/in/kusuma-surisetti-31aa88373"  width="320px"readonly>
+            </form>
+            </div>
+            </div>
+        </section>
+        <script>
+            const form = document.getElementById("contac");
+            form.addEventListener("submit",function(event){
+                event.preventDefault();
+                form.reset();
+                alert("Thank you...")
+            });
+        </script>
+
+    </body>
+</html>
