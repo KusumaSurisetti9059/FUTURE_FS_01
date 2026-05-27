@@ -43,8 +43,9 @@ Portfolio-Website
  images
        profile.jpg
 
-                      What do the Project contain:
- Home Section Contains:
+       
+       What do the Project contain:
+Home Section Contains:
         Introduction
         Profile Image
         Short Description
